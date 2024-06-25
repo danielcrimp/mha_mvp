@@ -2,14 +2,17 @@ import streamlit as st
 import openai
 from pydub import AudioSegment
 
-# Initialize OpenAI API
-# openai.api_key = st.secrets["openai_api_key"]
-# # openai.api_key = Environment.OPENAI_API_KEY
-#
-# # Load Whisper model
-# model = whisper.load_model("base")
+Initialize OpenAI API
+openai.api_key = st.secrets["openai_api_key"]
+# openai.api_key = Environment.OPENAI_API_KEY
+
+# Load Whisper model
+model = whisper.load_model("base")
 
 st.title("MH Service")
+
+input = st.chat_input('test')
+
 #
 # # Audio input
 # audio_file = st.file_uploader("Upload an audio file", type=["wav", "mp3", "m4a"])
