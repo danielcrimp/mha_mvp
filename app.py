@@ -1,7 +1,6 @@
 import streamlit as st
 import openai
 from pydub import AudioSegment
-from globals import Environment
 
 # Initialize OpenAI API
 # openai.api_key = st.secrets["openai_api_key"]
