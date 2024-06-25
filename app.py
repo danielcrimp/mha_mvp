@@ -1,14 +1,14 @@
 import streamlit as st
-from openai import OpenAI
+import openai
 from pydub import AudioSegment
-from dotenv import  load_dotenv
 
-load_dotenv()
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.title("MH Service")
 
+st.text(st.secrets['secret'])
 
-client = OpenAI()
+client = openai.OpenAI()
 
 messages = st.container(height=300)
 if prompt := st.chat_input("Say something"):
