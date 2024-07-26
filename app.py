@@ -3,7 +3,7 @@ import openai
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-st.title("MH Service")
+st.title("Buddy - Pocket Therapist")
 
 client = openai.OpenAI()
 
