@@ -30,7 +30,7 @@ if prompt := st.chat_input("Say something"):
     st.session_state.message_list.append({"role": "user", "content": prompt})
 
     completion = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         messages=st.session_state.message_list
     )
     
